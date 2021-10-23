@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  agd:
+    build: ./
+    volumes:
+      - ./:/agd
+    networks:
+      - web_humancam
+    environment:
+      - "params=${params}"
+networks:
+  web_humancam:
+    external: true
