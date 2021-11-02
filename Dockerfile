@@ -11,4 +11,4 @@ WORKDIR /agd
 
 COPY . .
 
-ENTRYPOINT ["bash", "entrypoint.sh"]
+# ENTRYPOINT ["bash", "entrypoint.sh"]
